@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Portal</title>
+</head>
+<style>
+
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { 
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    background: lightslategray;
+    padding: 14px 16px;
+    margin: 0px;
+}
+
+li a:hover{
+    color:darkred;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+body { 
+    background-color: lavender;
+}
+
+.welcome {
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.welcome-text { 
+    font-size: 30px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+div { 
+    text-align: center;
+    margin: auto;
+}
+
+fieldset { 
+    width: 300px;
+    float: left;
+}
+</style>
+<body>
+    <div>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sign">Sign Up</a></li>
+                        <li><a href="/roster">Employee Roster</a></li>
+                        <li><a href="/login">Log in</a></li>
+                    </ul>
+                </nav>
+        </header>
+    </div>
+    <div>
+        <br><br>
+        <h1 class = "welcome">Log in Here</h1>
+        <fieldset class = "personal-info">
+            <legend class = "personal">Log in Information</legend>
+            <section>
+                <form method="POST" action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name"/><br>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password"/><br><br>
+                    <input type="submit">
+                </form>
+            </section>
+        </fieldset>
+    </div>
+</body>
+</html>
