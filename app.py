@@ -19,8 +19,7 @@ conn = pymysql.connect(host='localhost',
                         password='blessings100%',
                         db='people',)
 
-mysql = MySQL()
-mysql.init_app(app)
+
 
 @app.route('/')
 def home():
